@@ -1,166 +1,316 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Westwing Comércio Varejista S.A. — Informações institucionais, dados cadastrais e políticas de privacidade. CNPJ 14.776.142/0001-50." />
-  <title>Westwing | Informações Institucionais</title>
-
-  <!-- Font Awesome (carregado ANTES do CSS local) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
-  <!-- CSS local -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Westwing — Curadoria de móveis, decoração e lifestyle. Transforme sua casa com design e inspiração. Lojas em São Paulo e entrega para todo o Brasil.">
+  <title>Westwing | Móveis, Decoração e Lifestyle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- ================= HEADER ================= -->
-  <header class="main-header">
-    <div class="container header-container">
-      <div class="logo-area">
-        <i class="fa-solid fa-couch logo-icon" aria-hidden="true"></i>
-        <span class="logo-text">Westwing<span class="logo-dot">.</span></span>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container header-top-inner">
+        <span><i class="fa-solid fa-truck-fast"></i> Frete grátis acima de R$ 499 para todo o Brasil</span>
+        <span><i class="fa-solid fa-store"></i> 3 lojas físicas em São Paulo</span>
       </div>
+    </div>
 
-      <nav class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#empresa"><i class="fa-solid fa-building" aria-hidden="true"></i> Empresa</a></li>
-          <li><a href="#dados"><i class="fa-solid fa-id-card" aria-hidden="true"></i> Dados Oficiais</a></li>
-          <li><a href="#contato"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contato</a></li>
-          <li><a href="#privacidade" class="nav-privacy"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Privacidade</a></li>
-        </ul>
-      </nav>
+    <div class="header-main">
+      <div class="container header-main-inner">
+        <a href="#" class="brand" aria-label="Westwing — página inicial">
+          <span class="brand-mark">W</span>
+          <span class="brand-name">Westwing</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#categorias"><i class="fa-solid fa-couch"></i> Móveis</a></li>
+            <li><a href="#categorias"><i class="fa-solid fa-lamp"></i> Decoração</a></li>
+            <li><a href="#lifestyle"><i class="fa-solid fa-spa"></i> Lifestyle</a></li>
+            <li><a href="#lojas"><i class="fa-solid fa-store"></i> Lojas</a></li>
+            <li><a href="#institucional"><i class="fa-solid fa-building"></i> Institucional</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="icon-btn" aria-label="Favoritos"><i class="fa-regular fa-heart"></i></button>
+          <button class="icon-btn cart-btn" aria-label="Carrinho">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- ================= HERO ================= -->
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Westwing Comércio Varejista S.A.</h1>
-      <p class="hero-subtitle">
-        Referência em decoração e estilo de vida. Informações institucionais e transparência.
-      </p>
-      <div class="hero-badges">
-        <span class="badge"><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Sociedade Anônima Aberta</span>
-        <span class="badge"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Desde 2011</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= EMPRESA ================= -->
-  <section id="empresa" class="section">
-    <div class="container">
-      <h2 class="section-title"><i class="fa-solid fa-store" aria-hidden="true"></i> Sobre a Empresa</h2>
-
-      <div class="grid-2">
-        <div class="card info-card">
-          <div class="card-icon"><i class="fa-solid fa-couch" aria-hidden="true"></i></div>
-          <h3>Atividade Principal</h3>
-          <p><strong>CNAE 47.54-7-01</strong> — Comércio varejista de móveis.</p>
-          <p class="text-muted">
-            A Westwing atua no varejo online e físico de móveis, decoração e utilidades para o lar,
-            com curadoria de design e foco na experiência do cliente.
-          </p>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-eyebrow"><i class="fa-solid fa-star"></i> Curadoria Westwing</span>
+        <h1>Sua casa merece<br><em>design de verdade.</em></h1>
+        <p>Móveis, decoração e lifestyle selecionados por especialistas. Do clássico ao contemporâneo, tudo para transformar ambientes em lugares que contam a sua história.</p>
+        <div class="hero-cta">
+          <a href="#categorias" class="btn btn-primary">Explorar coleção <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#lojas" class="btn btn-ghost">Encontrar loja <i class="fa-solid fa-location-dot"></i></a>
         </div>
-
-        <div class="card info-card">
-          <div class="card-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
-          <h3>Perfil Corporativo</h3>
-          <p><strong>Porte:</strong> Sem Enquadramento</p>
-          <p><strong>Natureza Jurídica:</strong> Sociedade Anônima Aberta</p>
-          <p class="text-muted">
-            Companhia de capital aberto com ações negociadas em bolsa, sujeita às normas da CVM.
-          </p>
+        <div class="hero-trust">
+          <div><strong>+10 mil</strong><span>produtos com curadoria</span></div>
+          <div><strong>2011</strong><span>desde a fundação</span></div>
+          <div><strong>B3</strong><span>Novo Mercado</span></div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= DADOS OFICIAIS ================= -->
-  <section id="dados" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title"><i class="fa-solid fa-file-contract" aria-hidden="true"></i> Dados Oficiais</h2>
-
-      <div class="table-responsive">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th><i class="fa-solid fa-tag" aria-hidden="true"></i> Campo</th>
-              <th><i class="fa-solid fa-info-circle" aria-hidden="true"></i> Informação</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><i class="fa-solid fa-fingerprint" aria-hidden="true"></i> CNPJ</td>
-              <td>14.776.142/0001-50</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-barcode" aria-hidden="true"></i> Inscrição Estadual (SP)</td>
-              <td>146.829.480.115</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-building" aria-hidden="true"></i> Razão Social</td>
-              <td>Westwing Comercio Varejista S.a.</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-calendar-day" aria-hidden="true"></i> Data de Abertura</td>
-              <td>12/12/2011 (14 anos, 10 meses e 17 dias)</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Porte</td>
-              <td>Sem Enquadramento</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> Natureza Jurídica</td>
-              <td>Sociedade Anônima Aberta</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Logradouro</td>
-              <td>Avenida Queiroz Filho, 1700 — Andar 5, Edif Villa Lobos Office</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-map-pin" aria-hidden="true"></i> Bairro / CEP</td>
-              <td>Vila Hamburguesa — 05319-000</td>
-            </tr>
-            <tr>
-              <td><i class="fa-solid fa-city" aria-hidden="true"></i> Município / UF</td>
-              <td>São Paulo / SP</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="hero-visual">
+        <div class="hero-card hero-card-1">
+          <i class="fa-solid fa-couch"></i>
+          <span>Sala de estar</span>
+        </div>
+        <div class="hero-card hero-card-2">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Mesa posta</span>
+        </div>
+        <div class="hero-card hero-card-3">
+          <i class="fa-solid fa-bed"></i>
+          <span>Quarto</span>
+        </div>
+        <div class="hero-shape"></div>
       </div>
     </div>
   </section>
 
-  <!-- ================= CONTATO ================= -->
-  <section id="contato" class="section">
+  <!-- ================= CATEGORIAS ================= -->
+  <section id="categorias" class="section">
     <div class="container">
-      <h2 class="section-title"><i class="fa-solid fa-address-book" aria-hidden="true"></i> Canais de Contato</h2>
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Explore por ambiente</span>
+          <h2>Onde a transformação começa</h2>
+        </div>
+        <a href="#" class="link-arrow">Ver todas as categorias <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
 
-      <div class="grid-3">
-        <a href="tel:+551130352870" class="contact-card">
-          <i class="fa-solid fa-phone-volume contact-icon" aria-hidden="true"></i>
-          <h3>Telefone</h3>
-          <p>(11) 3035-2870</p>
+      <div class="category-grid">
+        <a href="#" class="category-card category-card--large">
+          <div class="category-icon"><i class="fa-solid fa-couch"></i></div>
+          <div class="category-info">
+            <h3>Sala de Estar</h3>
+            <p>Sofás, poltronas, mesas de centro e estantes para o coração da casa.</p>
+            <span class="category-link">Explorar <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
         </a>
 
-        <a href="tel:+551135888834" class="contact-card">
-          <i class="fa-solid fa-mobile-screen-button contact-icon" aria-hidden="true"></i>
-          <h3>Telefone Alternativo</h3>
-          <p>(11) 3588-8834</p>
+        <a href="#" class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-bed"></i></div>
+          <div class="category-info">
+            <h3>Quarto</h3>
+            <p>Camas, cabeceiras, criados-mudos e enxoval.</p>
+            <span class="category-link">Explorar <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
         </a>
 
-        <a href="mailto:fiscal@westwing.com.br" class="contact-card">
-          <i class="fa-solid fa-envelope-open-text contact-icon" aria-hidden="true"></i>
-          <h3>E-mail Fiscal</h3>
-          <p>fiscal@westwing.com.br</p>
+        <a href="#" class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="category-info">
+            <h3>Mesa Posta</h3>
+            <p>Louças, taças, cutelaria e jogos americanos.</p>
+            <span class="category-link">Explorar <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
         </a>
+
+        <a href="#" class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-lamp"></i></div>
+          <div class="category-info">
+            <h3>Iluminação</h3>
+            <p>Lustres, pendentes, abajures e arandelas.</p>
+            <span class="category-link">Explorar <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="#" class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-rug"></i></div>
+          <div class="category-info">
+            <h3>Tapetes & Têxteis</h3>
+            <p>Tapetes, cortinas, almofadas e mantas.</p>
+            <span class="category-link">Explorar <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="#" class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="category-info">
+            <h3>Decoração</h3>
+            <p>Vasos, espelhos, quadros, velas e objetos.</p>
+            <span class="category-link">Explorar <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIFESTYLE ================= -->
+  <section id="lifestyle" class="section section-dark">
+    <div class="container lifestyle-grid">
+      <div class="lifestyle-copy">
+        <span class="section-eyebrow">Westwing Lifestyle</span>
+        <h2>Muito além da decoração</h2>
+        <p>Beleza, aromaterapia, pijamas, papelaria e acessórios. Uma seleção que estende o conceito de <em>Beautiful Living</em> para todos os momentos do seu dia.</p>
+        <ul class="lifestyle-list">
+          <li><i class="fa-solid fa-check"></i> Skincare e maquiagem</li>
+          <li><i class="fa-solid fa-check"></i> Velas, aromas e difusores</li>
+          <li><i class="fa-solid fa-check"></i> Pijamas e acessórios femininos</li>
+          <li><i class="fa-solid fa-check"></i> Papelaria e organização</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Descobrir Lifestyle <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="lifestyle-visual">
+        <div class="lifestyle-tile"><i class="fa-solid fa-spa"></i><span>Autocuidado</span></div>
+        <div class="lifestyle-tile"><i class="fa-solid fa-fire"></i><span>Aromaterapia</span></div>
+        <div class="lifestyle-tile"><i class="fa-solid fa-shirt"></i><span>Pijamas</span></div>
+        <div class="lifestyle-tile"><i class="fa-solid fa-pen-fancy"></i><span>Papelaria</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POR QUE WESTWING ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-eyebrow">Por que Westwing</span>
+        <h2>Curadoria que faz a diferença</h2>
+        <p class="section-sub">Não somos um marketplace qualquer. Cada produto passa por um time de especialistas antes de chegar até você.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>Curadoria especializada</h3>
+          <p>Todo o sortimento é revisado e selecionado. Grandes marcas e designers independentes, com critério e olhar editorial [citation:3].</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-tag"></i></div>
+          <h3>Private Label</h3>
+          <p>Produtos de marca própria desenvolvidos pelo nosso time, com design exclusivo e preço acessível.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Envio imediato</h3>
+          <p>Milhares de itens prontos para envio rápido, para que seu projeto não espere [citation:1].</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-couch"></i></div>
+          <h3>Do online ao físico</h3>
+          <p>Nascida digital, a Westwing também tem lojas físicas para você ver, tocar e se inspirar [citation:1][citation:3].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOJAS ================= -->
+  <section id="lojas" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Visite-nos</span>
+          <h2>Lojas Westwing em São Paulo</h2>
+        </div>
+        <p class="section-head-note">Atendimento presencial com consultores especializados.</p>
+      </div>
+
+      <div class="stores-grid">
+        <article class="store-card">
+          <div class="store-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Shopping Tamboré</h3>
+          <p class="store-address"><i class="fa-solid fa-location-dot"></i> Av. Piracema, 669 — Tamboré, Barueri</p>
+          <p class="store-phone"><i class="fa-solid fa-phone"></i> (11) 3580-0107</p>
+          <div class="store-hours">
+            <span><i class="fa-regular fa-clock"></i> Seg–Sáb: 10h–22h</span>
+            <span>Dom/Fer: 14h–20h</span>
+          </div>
+        </article>
+
+        <article class="store-card store-card--featured">
+          <div class="store-badge">Flagship</div>
+          <div class="store-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Vila Madalena</h3>
+          <p class="store-address"><i class="fa-solid fa-location-dot"></i> Rua Simpatia, 51 — Vila Madalena</p>
+          <p class="store-phone"><i class="fa-solid fa-phone"></i> (11) 3588-8834</p>
+          <div class="store-hours">
+            <span><i class="fa-regular fa-clock"></i> Seg–Sáb: 10h–19h</span>
+            <span>Dom/Fer: 12h–18h</span>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Moema</h3>
+          <p class="store-address"><i class="fa-solid fa-location-dot"></i> Alameda dos Arapanés, 995 — Moema</p>
+          <p class="store-phone"><i class="fa-solid fa-phone"></i> (11) 3580-0220</p>
+          <div class="store-hours">
+            <span><i class="fa-regular fa-clock"></i> Consulte horários</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTITUCIONAL ================= -->
+  <section id="institucional" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Transparência</span>
+          <h2>Informações Institucionais</h2>
+        </div>
+      </div>
+
+      <div class="institutional-grid">
+        <div class="inst-card">
+          <h3><i class="fa-solid fa-building"></i> Dados Cadastrais</h3>
+          <dl class="data-list">
+            <dt>Razão Social</dt><dd>Westwing Comercio Varejista S.a.</dd>
+            <dt>CNPJ</dt><dd>14.776.142/0001-50</dd>
+            <dt>Inscrição Estadual (SP)</dt><dd>146.829.480.115</dd>
+            <dt>Data de Abertura</dt><dd>12/12/2011</dd>
+            <dt>Natureza Jurídica</dt><dd>Sociedade Anônima Aberta</dd>
+            <dt>Porte</dt><dd>Sem Enquadramento</dd>
+            <dt>CNAE Principal</dt><dd>47.54-7-01 — Comércio varejista de móveis</dd>
+          </dl>
+        </div>
+
+        <div class="inst-card">
+          <h3><i class="fa-solid fa-location-dot"></i> Sede</h3>
+          <p class="inst-address">
+            Avenida Queiroz Filho, 1700<br>
+            Andar 5 — Edif. Villa Lobos Office<br>
+            Vila Hamburguesa — São Paulo/SP<br>
+            CEP: 05319-000
+          </p>
+          <h3 class="mt"><i class="fa-solid fa-address-book"></i> Contato</h3>
+          <p><i class="fa-solid fa-phone"></i> (11) 3035-2870</p>
+          <p><i class="fa-solid fa-phone"></i> (11) 3588-8834</p>
+          <p><i class="fa-solid fa-envelope"></i> fiscal@westwing.com.br</p>
+        </div>
+
+        <div class="inst-card inst-card--highlight">
+          <h3><i class="fa-solid fa-chart-line"></i> Histórico</h3>
+          <p><strong>2011</strong> — Fundação no Brasil como parte do grupo alemão Westwing, com foco em casa e decoração [citation:3][citation:9].</p>
+          <p><strong>2014</strong> — Abertura da primeira loja física em São Paulo [citation:3].</p>
+          <p><strong>2018</strong> — Aquisição pelo Axxon Group, tornando-se independente do grupo internacional [citation:3].</p>
+          <p><strong>2019</strong> — Expansão para lifestyle: cosméticos, vestuário, eletrodomésticos e design de interiores [citation:3].</p>
+          <p><strong>2021</strong> — IPO na B3, captando mais de R$ 400 milhões; listada no Novo Mercado [citation:3][citation:9].</p>
+        </div>
       </div>
     </div>
   </section>
@@ -168,115 +318,94 @@
   <!-- ================= PRIVACIDADE ================= -->
   <section id="privacidade" class="section section-privacy">
     <div class="container">
-      <h2 class="section-title"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Políticas de Privacidade</h2>
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">LGPD</span>
+          <h2>Política de Privacidade</h2>
+        </div>
+      </div>
 
-      <div class="privacy-content">
+      <div class="privacy-wrapper">
         <p class="privacy-intro">
-          A <strong>Westwing Comércio Varejista S.A.</strong> (&ldquo;Westwing&rdquo;) valoriza a transparência e a
-          segurança no tratamento dos dados pessoais de seus clientes, parceiros e visitantes do site.
-          Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos
-          suas informações, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).
+          A <strong>Westwing Comércio Varejista S.A.</strong> valoriza a transparência e a segurança no tratamento dos seus dados. Esta política descreve como coletamos, usamos e protegemos suas informações, em conformidade com a LGPD (Lei nº 13.709/2018).
         </p>
 
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-database" aria-hidden="true"></i> 1. Coleta de Dados</h3>
-          <p>
-            Coletamos dados pessoais fornecidos voluntariamente por você (como nome, e-mail, telefone
-            e endereço) ao realizar cadastros, efetuar compras ou entrar em contato com nossos canais
-            de atendimento. Também podemos coletar dados automaticamente por meio de cookies e
-            tecnologias similares, incluindo endereço IP, tipo de navegador e páginas visitadas,
-            para melhorar sua experiência de navegação.
-          </p>
-        </article>
+        <div class="privacy-grid">
+          <article class="privacy-item">
+            <h3><i class="fa-solid fa-database"></i> 1. Coleta</h3>
+            <p>Coletamos dados fornecidos por você (nome, e-mail, telefone, endereço) em cadastros, compras e contatos. Também coletamos automaticamente cookies, IP e navegação para melhorar a experiência.</p>
+          </article>
+          <article class="privacy-item">
+            <h3><i class="fa-solid fa-bullseye"></i> 2. Finalidade</h3>
+            <p>Processar pedidos; comunicar novidades (com consentimento); cumprir obrigações fiscais e legais; prevenir fraudes; e aprimorar produtos e serviços com base em análises agregadas.</p>
+          </article>
+          <article class="privacy-item">
+            <h3><i class="fa-solid fa-share-nodes"></i> 3. Compartilhamento</h3>
+            <p>Não vendemos dados. Compartilhamos apenas com parceiros essenciais (transportadoras, gateways, hospedagem) sob contratos de confidencialidade, ou com autoridades quando exigido por lei.</p>
+          </article>
+          <article class="privacy-item">
+            <h3><i class="fa-solid fa-lock"></i> 4. Segurança</h3>
+            <p>Adotamos medidas técnicas e administrativas contra acessos não autorizados, perda ou destruição. Os dados são mantidos pelo prazo necessário às finalidades ou conforme exigido legalmente.</p>
+          </article>
+          <article class="privacy-item">
+            <h3><i class="fa-solid fa-user-gear"></i> 5. Seus Direitos</h3>
+            <p>Você pode confirmar tratamento, acessar, corrigir, anonimizar, bloquear ou eliminar dados, revogar consentimento e solicitar portabilidade. Contato: <strong>fiscal@westwing.com.br</strong>.</p>
+          </article>
+          <article class="privacy-item">
+            <h3><i class="fa-solid fa-cookie-bite"></i> 6. Cookies</h3>
+            <p>Usamos cookies para personalizar conteúdo, lembrar preferências e analisar tráfego. Você pode gerenciá-los no navegador ou no banner de consentimento. A desativação de cookies essenciais pode afetar funcionalidades.</p>
+          </article>
+        </div>
 
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-bullseye" aria-hidden="true"></i> 2. Finalidade do Tratamento</h3>
-          <p>
-            Seus dados são utilizados para: (i) processar pedidos e entregas; (ii) comunicar novidades,
-            promoções e conteúdos relevantes (mediante consentimento); (iii) cumprir obrigações legais
-            e regulatórias, incluindo obrigações fiscais e contábeis; (iv) prevenir fraudes e garantir
-            a segurança das transações; e (v) melhorar nossos produtos e serviços com base em análises
-            agregadas de comportamento.
-          </p>
-        </article>
-
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> 3. Compartilhamento de Dados</h3>
-          <p>
-            A Westwing não vende dados pessoais. O compartilhamento ocorre apenas com parceiros essenciais
-            à prestação dos serviços (como transportadoras, gateways de pagamento e provedores de
-            hospedagem), sempre sob contratos que exigem confidencialidade e conformidade com a LGPD.
-            Também podemos compartilhar informações com autoridades públicas quando legalmente exigido.
-          </p>
-        </article>
-
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-lock" aria-hidden="true"></i> 4. Segurança e Armazenamento</h3>
-          <p>
-            Adotamos medidas técnicas e administrativas para proteger seus dados contra acessos não
-            autorizados, perda, alteração ou destruição. Os dados são armazenados em infraestrutura
-            segura pelo tempo necessário ao cumprimento das finalidades descritas ou conforme exigido
-            por lei. Após o prazo legal, os dados são eliminados ou anonimizados de forma segura.
-          </p>
-        </article>
-
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-user-gear" aria-hidden="true"></i> 5. Direitos do Titular</h3>
-          <p>
-            Nos termos da LGPD, você tem direito a: confirmar a existência de tratamento; acessar seus
-            dados; corrigir dados incompletos ou desatualizados; solicitar a anonimização, bloqueio ou
-            eliminação de dados desnecessários; revogar o consentimento; e solicitar a portabilidade
-            dos dados. Para exercer esses direitos, entre em contato pelo e-mail
-            <strong>fiscal@westwing.com.br</strong>.
-          </p>
-        </article>
-
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i> 6. Cookies</h3>
-          <p>
-            Utilizamos cookies para personalizar conteúdo, lembrar preferências e analisar o tráfego
-            do site. Você pode gerenciar as preferências de cookies diretamente no seu navegador ou
-            por meio do banner de consentimento exibido em nosso site. A desativação de cookies
-            essenciais pode impactar funcionalidades básicas da plataforma.
-          </p>
-        </article>
-
-        <article class="privacy-block">
-          <h3><i class="fa-solid fa-rotate" aria-hidden="true"></i> 7. Atualizações desta Política</h3>
-          <p>
-            Esta Política pode ser atualizada periodicamente para refletir mudanças legislativas ou
-            operacionais. A versão vigente estará sempre disponível nesta página, com a data da última
-            atualização. Recomendamos a consulta regular.
-          </p>
-          <p class="privacy-date">
-            <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-            Última atualização: Outubro de 2026.
-          </p>
-        </article>
+        <p class="privacy-update"><i class="fa-regular fa-calendar"></i> Última atualização: Outubro de 2026.</p>
       </div>
     </div>
   </section>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="main-footer">
-    <div class="container footer-content">
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <i class="fa-solid fa-couch" aria-hidden="true"></i>
-        <span>Westwing</span>
-        <p>Westwing Comércio Varejista S.A. — CNPJ 14.776.142/0001-50</p>
+        <span class="brand-mark">W</span>
+        <span class="brand-name">Westwing</span>
+        <p>Curadoria de móveis, decoração e lifestyle.<br>Beautiful Living desde 2011.</p>
       </div>
 
-      <div class="footer-links">
-        <a href="#empresa">Empresa</a>
-        <a href="#dados">Dados</a>
+      <div class="footer-col">
+        <h4>Navegue</h4>
+        <a href="#categorias">Categorias</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#lojas">Lojas</a>
+        <a href="#institucional">Institucional</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <a href="#institucional">Dados cadastrais</a>
+        <a href="#institucional">Histórico</a>
         <a href="#privacidade">Privacidade</a>
       </div>
 
-      <p class="footer-copy">&copy; 2026 Westwing. Todos os direitos reservados.</p>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p><i class="fa-solid fa-phone"></i> (11) 3035-2870</p>
+        <p><i class="fa-solid fa-envelope"></i> fiscal@westwing.com.br</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Westwing Comércio Varejista S.A. — CNPJ 14.776.142/0001-50. Todos os direitos reservados.</p>
+        <p class="footer-legal">Sociedade Anônima Aberta — B3 Novo Mercado</p>
+      </div>
     </div>
   </footer>
 
-  <!-- JS local (no fim do body) -->
   <script src="script.js"></script>
 </body>
 </html>
